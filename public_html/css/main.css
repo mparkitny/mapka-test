@@ -1,0 +1,12 @@
+body {
+    background-color: #f55;
+}
+
+#mainView-1010-body {
+    background-color: #9f9;
+}
+
+#mapPanel, #layersList {
+    float: left;
+    height: 600;
+}

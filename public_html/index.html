@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Hello Ext</title>
+
+        <link rel="stylesheet" type="text/css" href="http://cdn.sencha.com/ext/gpl/4.2.1/resources/css/ext-all.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script type="text/javascript" src="https://extjs.cachefly.net/ext/gpl/4.2.1/ext-all.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script src="http://openlayers.org/api/OpenLayers.js"></script>
+    </head>
+<body></body>
+</html>
+<!--<html>
+<head>
+  <title>OpenLayers Example</title>
+    <script src="http://openlayers.org/api/OpenLayers.js"></script>
+    </head>
+    <body>
+      <div style="width:100%; height:100%" id="map"></div>
+      <script defer="defer" type="text/javascript">
+        var map = new OpenLayers.Map('map');
+        var wms = new OpenLayers.Layer.WMS( "OpenLayers WMS",
+            "http://vmap0.tiles.osgeo.org/wms/vmap0", {layers: 'basic'} );
+        map.addLayer(wms);
+        map.zoomToMaxExtent();
+        alert(document.getElementById('map').innerHTML);
+      </script>
+
+</body>
+</html>-->
+
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <title>OpenLayers Map Controls Example</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/2.13.1/theme/default/style.css" type="text/css">
+        <style>body, html, #map { width: 960px; height: 500px; margin: 0; }</style>
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/openlayers/2.13.1/OpenLayers.js"></script>
+    </head>
+    <body>
+        <div id="map"></div>
+        <script type="text/javascript">
+        // init the map object with a OSM base layer.
+        var map = new OpenLayers.Map('map', {
+                layers: [
+                    new OpenLayers.Layer.OSM('OSM')
+                ],
+                controls: [
+                    new OpenLayers.Control.Navigation(),
+                    new OpenLayers.Control.Attribution(),
+                    new OpenLayers.Control.PanZoomBar(),
+                    new OpenLayers.Control.LayerSwitcher({
+                        'ascending': false
+                    }),
+                    new OpenLayers.Control.Permalink(),
+                    new OpenLayers.Control.ScaleLine(),
+                    new OpenLayers.Control.Permalink('permalink'),
+                    new OpenLayers.Control.MousePosition(),
+                    new OpenLayers.Control.OverviewMap(),
+                    new OpenLayers.Control.KeyboardDefaults()
+                ],
+                center: new OpenLayers.LonLat(13, 51).transform('EPSG:4326', 'EPSG:3857'),
+                zoom: 8
+            });
+
+        // we will use this vector layer to demonstrate editing vector features
+        var editingLayer = new OpenLayers.Layer.Vector("Editing");
+        map.addLayers([editingLayer]);
+
+        // init the editing toolbar and a basic selection control
+        var editingToolbar = new OpenLayers.Control.EditingToolbar(editingLayer);
+        var selectCtrl = new OpenLayers.Control.SelectFeature(
+                editingLayer, {
+                hover: true
+            });
+        map.addControls([editingToolbar, selectCtrl]);
+        selectCtrl.activate();
+        </script>
+    </body>
+</html>-->
